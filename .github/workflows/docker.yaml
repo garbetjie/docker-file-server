@@ -9,6 +9,7 @@ jobs:
   publish:
     name: "Publish to Docker Hub"
     runs-on: ubuntu-latest
+    environment: docker-hub
     steps:
     - name: Check out
       uses: actions/checkout@v3
